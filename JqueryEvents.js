@@ -56,9 +56,22 @@ let x = 0 ;
     });
     // scroll event
 let a = 0;
-    $("scroll").scroll(function(){
-        $("span").text(a+=1);
+    $(".scroll").scroll(function(){
+        $("#scrollid").text(a+=1);
     });
+
+// select event
+$("#inputselect").select(function(){
+    alert("you select event triggered");
+});
+
+// submit
+
+    $("form").submit(function(){
+        alert("form submited");
+    });
+
+
     });
 
 
